@@ -20,8 +20,5 @@
   "license": "MIT",
   "devDependencies": {
     "imba": "^2.0.0-alpha.240"
-  },
-  "dependencies": {
-    "imba": "^2.0.0-alpha.240"
   }
 }
