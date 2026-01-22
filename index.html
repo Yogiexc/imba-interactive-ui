@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imba Interactive Dashboard</title>
+    <meta name="description" content="Exploring Imba - memoized DOM and high-performance UI">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Loading state */
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-family: system-ui, -apple-system, sans-serif;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="loading">Loading Imba Application...</div>
+    
+    <!-- 
+        Imba Script
+        
+        Development: Load dari Imba compiler langsung
+        Production: Load dari compiled JavaScript
+    -->
+    
+    <!-- Development dengan Imba CLI -->
+    <!-- Jalankan: imba serve src/app.imba -->
+    <script type="module" src="./src/app.imba"></script>
+    
+    <!-- 
+        Production Build:
+        1. Compile: imba build src/app.imba -o dist/app.js
+        2. Uncomment line berikut dan comment line di atas:
+        <script type="module" src="./dist/app.js"></script>
+    -->
+</body>
+</html>
