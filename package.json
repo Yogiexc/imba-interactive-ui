@@ -1,0 +1,27 @@
+{
+  "name": "imba-interactive-ui",
+  "version": "1.0.0",
+  "description": "Exploring Imba to build high-performance interactive UI using memoized DOM and concise syntax",
+  "type": "module",
+  "scripts": {
+    "dev": "imba serve src/app.imba",
+    "build": "imba build src/app.imba -o dist/app.js",
+    "preview": "imba serve dist/app.js"
+  },
+  "keywords": [
+    "imba",
+    "memoized-dom",
+    "frontend",
+    "interactive-ui",
+    "performance",
+    "alternative-framework"
+  ],
+  "author": "Frontend Engineer Explorer",
+  "license": "MIT",
+  "devDependencies": {
+    "imba": "^2.0.0-alpha.240"
+  },
+  "dependencies": {
+    "imba": "^2.0.0-alpha.240"
+  }
+}
